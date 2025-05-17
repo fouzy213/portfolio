@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a0a0a;
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:hover {
+  color: #9f0000;
+}
+
+img.linkedin {
+  width: 40px;
+  margin-right: 10px;
+}
+
+img.github {
+  width: 40px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  color: white;
+  margin-right: 10px;
+}
+
+li {
+  margin: 5px;
+  color: white;
+}
+.img_logo {
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

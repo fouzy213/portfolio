@@ -1,0 +1,69 @@
+.main_profil {
+  background-color: #0a0a0a;
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+h1 {
+  display: flex;
+  padding: 2px 5px 2px 5px;
+  padding-left: 20px;
+}
+
+.description_dev {
+  color: #0a0a0a;
+  text-shadow: -1px -1px 0 #9f0000, 1px -1px 0 #9f0000, -1px 1px 0 #9f0000, 1px
+    1px 0 #9f0000;
+}
+.logo_profilContainer {
+  display: flex;
+  background: linear-gradient(
+    134deg,
+    rgba(159, 0, 0, 1) 32%,
+    rgba(10, 10, 10, 0.98) 67%
+  );
+}
+.logo_profil {
+  width: 280px;
+  border-radius: 5%;
+}
+.profil {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1rem;
+  flex-direction: column;
+}
+.para_pro {
+  color: #ffffff;
+  margin-left: 20px;
+  font-size: smaller;
+  max-width: 50vw;
+}
+@media (max-width: 768px) {
+  .profil {
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+  }
+
+  .main_profil {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column-reverse;
+  }
+  .profil {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .description_dev {
+    margin-left: 50px;
+  }
+}

@@ -1,0 +1,35 @@
+.About_full {
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  margin-top: 65px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.text_about {
+  font-size: medium;
+  max-width: 70vw;
+}
+.techno {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  margin-top: 25px;
+}
+.cv_download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .techno {
+    width: 60%;
+  }
+}
