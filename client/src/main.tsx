@@ -20,26 +20,22 @@ import HomePage from "./pages/HomePage";
 
 // Create router configuration with routes
 // You can add more routes as you build out your app!
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      element: <App />,
+      children: [
+        { path: "/", element: <HomePage /> },
+        { path: "/contact", element: <ContactPage /> },
+        { path: "/about", element: <AboutPage /> },
+      ],
+    },
+  ],
   {
-    element: <App />,
-    children: [
-      {
-        path: "/", // The root path
-        element: <HomePage />, // Renders the App component for the home page
-      },
-      {
-        path: "/contact", // The root path
-        element: <ContactPage />, // Renders the App component for the home page
-      },
-      {
-        path: "/about",
-        element: <AboutPage />,
-      },
-    ],
-  },
-  // Try adding a new route! For example, "/about" with an About component
-]);
+    basename: "/portfolio", // 👈 important!
+  }
+);
+
 
 /* ************************************************************************* */
 
