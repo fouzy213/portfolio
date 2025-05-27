@@ -6,15 +6,15 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "transferToClient":"scp -r -P 22 -i ~/.ssh/id_ed25519 dist root@168.231.77.160:/root/Portfolio/portfolio/"
-
+    "transferToClient": "scp -r -P 22 -i ~/.ssh/id_ed25519 dist root@168.231.77.160:/root/Portfolio/portfolio/"
   },
   "dependencies": {
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router": "^7.4.1"
+    "react-router": "^7.4.1",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@types/react": "^19.0.12",

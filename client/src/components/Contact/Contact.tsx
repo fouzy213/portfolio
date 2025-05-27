@@ -1,6 +1,7 @@
 import "./contact.css";
 import NavBar from "../Navbar/Navbar";
 import { useState } from "react";
+import { toast } from 'react-toastify';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -20,8 +21,7 @@ function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Envoi à Formspree
-    await fetch("https://formspree.io/f/xyzwlqev", {
+    const response = await fetch("https://formspree.io/f/xyzwlqev", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -29,7 +29,13 @@ function Contact() {
       body: JSON.stringify(formData)
     });
 
-    // Reset du formulaire après soumission
+    if(response.status === 200)
+      toast.success("Your message got sent");
+    else
+      toast.error("An error occurred");
+
+      console.log(response)
+
     setFormData({
       name: "",
       email: "",
