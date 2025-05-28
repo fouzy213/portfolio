@@ -72,6 +72,6 @@ textarea {
     width: 70%;
   }
   .les_inputs {
-    align-items: stretch;
+    align-items: normal;
   }
 }

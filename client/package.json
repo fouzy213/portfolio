@@ -6,7 +6,7 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "transferToClient": "scp -r -P 22 -i ~/.ssh/id_ed25519 dist root@168.231.77.160:/root/Portfolio/portfolio/"
+    "transfer": "scp -r -P 22 -i ~/.ssh/id_ed25519 dist root@168.231.77.160:/root/Portfolio/portfolio/"
   },
   "dependencies": {
     "embla-carousel-autoplay": "^8.6.0",
